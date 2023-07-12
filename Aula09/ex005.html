@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeirod passos com DOM</title>
+</head>
+<style>
+    body {
+        background-color: rgb(233, 232, 172);
+        color :rgb(65, 109, 148);
+        font: normal 15pt Arial;
+    }
+</style>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div Class= 'msg'>Clique em mim</div> <!--div está como id = 'msg'-->
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.innerText = 'Olá'
+
+       var d = window.document.querySelector('div.msg') //a div que está como id é puxada
+       d.style.color = 'blue'
+       d.style.background = 'green'
+       d.innerText = 'Olá'
+
+
+    
+    </script>
+</body>
+</html>
